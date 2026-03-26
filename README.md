@@ -2,14 +2,7 @@
 
 ## 📌 Project Overview
 
-The **Trainer Management System** is a web application built using **Laravel 13** and **Tailwind CSS** to manage trainers, their roles & permissions, and track their working time logs.
-
-This system provides a structured way to:
-
-* Manage trainers
-* Control access using roles & permissions
-* Track working hours
-* View analytics via dashboard
+A Laravel-based web application to manage trainers, their roles & permissions, and track their working time logs. It includes authentication, role-based access control, and a clean UI built with Tailwind CSS.
 
 ---
 
@@ -53,16 +46,8 @@ Update `.env` with your database credentials.
 ### 4. Run migrations
 
 ```bash
-php artisan migrate
-```
-
-(Optional: if using seeders)
-
-```bash
 php artisan migrate:fresh --seed
 ```
-
----
 
 ### 5. Build assets
 
@@ -89,37 +74,6 @@ Visit:
 ```
 http://127.0.0.1:8000
 ```
-
----
-
-## 📌 Validation Highlights
-
-* Unique email for trainers
-* Phone number validation (Indian format)
-* Time log overlap prevention
-* Required fields validation using Form Requests
-
----
-
-## 🎯 Key Implementation Points
-
-* Clean MVC architecture
-* Use of Form Requests for validation
-* Proper database normalization
-* Eloquent relationships
-* Computed attributes (worked hours)
-* Modular structure
-* Reusable UI patterns
-
----
-
-## 📈 Future Improvements
-
-* Export reports (CSV/PDF)
-* Charts for analytics
-* Role management for users UI
-* API support
-* Advanced filtering
 
 ---
 
